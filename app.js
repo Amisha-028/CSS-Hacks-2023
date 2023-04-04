@@ -17,5 +17,6 @@ function handleFetching(prompt) {
     .then((data) => console.log(data))
     .catch((error) => console.error(error));
 }
-
-handleFetching("Convert this code to python 'cout<<lol<<endl;'");
+const code="cout<<'lol'<<endl;";
+handleFetching(`Convert this code to python ${code}`);
+handleFetching(`Convert this code to javascript ${code}`);
